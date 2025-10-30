@@ -6,7 +6,7 @@ const webLink = [
   <TimeEntry
     content={
       <a
-        href="https://shellywhen.github.io/misc/advice/paper-polish"
+        href="https://shellywhen.github.io/gardening/advice/paper-polish"
         target="_blank"
         rel="noreferrer noopener"
       >

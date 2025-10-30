@@ -48,8 +48,8 @@ const publicationData: PubEntrySpec[]  = [
       "In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI'25)",
     preprintLink: "https://arxiv.org/abs/2502.03784",
     paperLink: "https://dl.acm.org/doi/10.1145/3706598.3713881",
-    codeLink: "https://github.com/Motion115/GistVis",
-    exploreLink: "https://motion115.github.io/GistVis",
+    codeLink: "https://github.com/ruishizou/GistVis",
+    exploreLink: "https://ruishizou.github.io/GistVis",
     presentationLink: "https://www.youtube.com/watch?v=OIjAvoWdVCo",
     awardName: "Best Paper Honorable Mention recognition (top 5%)",
     awardLink:
@@ -155,8 +155,8 @@ const publicationData: PubEntrySpec[]  = [
     venueFull:
       "Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST 2023 Posters)",
     paperLink: "https://doi.org/10.1145/3586182.3616663",
-    exploreLink: "https://motion115.github.io/iTutor",
-    materialLink: "https://github.com/Motion115/iTutor",
+    exploreLink: "https://ruishizou.github.io/iTutor",
+    materialLink: "https://github.com/ruishizou/iTutor",
     teaser: iTutorImg,
   },
 ];

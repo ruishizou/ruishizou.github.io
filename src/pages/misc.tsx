@@ -4,6 +4,7 @@ import ProjectArchiveList from "../drafts/deprecated/project_archive";
 import ProjectDisplayList from "../drafts/projects";
 import PrecenseOnWeb from "../drafts/deprecated/web_presence";
 import WebLinks from "../drafts/links";
+import Moments from "../drafts/moments";
 const { Paragraph, Text, Title } = Typography;
 const { Content, Header, Footer } = Layout;
 
@@ -27,50 +28,10 @@ const Misc: React.FC = () => (
       Conference Moments
     </Title>
     <Divider style={{ margin: "0 0 1% 0" }} />
-    <Carousel>
-      <Alert
-        style={{
-          // width: widthPercentage,
-          padding: "auto",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-        message={
-          <Text>
-            🔍 Attending CHI'25—let's 'CHI'nnect ☕👋! Presenting my
-            first-authored papers at the{" "}
-            <a
-              href="https://programs.sigchi.org/chi/2025/program/content/188659"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Make it visible
-            </a>{" "}
-            and the{" "}
-            <a
-              href="https://programs.sigchi.org/chi/2025/program/content/194323"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LBW: Human-AI Collaboration
-            </a>{" "}
-            sessions 🎉. Say hi if you spot me! <br />
-            📚{" "}
-            <a
-              href="https://motion115.github.io/paper-constellations"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              Explore CHI'25 papers
-            </a>{" "}
-            using visual analysis!
-          </Text>
-        }
-      />
-    </Carousel>
+    <Moments />
 
-    <Title level={4}>Information Gallery</Title>
+
+    <Title level={4}>External Useful Information</Title>
     <Divider style={{ margin: "0 0 1% 0" }} />
     <WebLinks></WebLinks>
   </Content>

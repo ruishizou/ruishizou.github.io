@@ -13,10 +13,10 @@ const PersonalIntrouction = () => {
       affiliation="University of California, San Diego"
       location="La Jolla, CA, USA"
       googleScholar="https://scholar.google.com/citations?user=fHRnWkUAAAAJ"
-      github="https://github.com/Motion115"
+      github="https://github.com/ruishizou"
       linkedin="https://www.linkedin.com/in/ruzou"
       email="mailto:ruishi.ray.zou@gmail.com"
-      orcid="https://orcid.org/0009-0001-3798-6833"
+      // orcid="https://orcid.org/0009-0001-3798-6833"
       twitter="https://twitter.com/ruishi_zou"
       personalStatement={
         <>

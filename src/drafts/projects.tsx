@@ -11,7 +11,7 @@ const projList = [
     venueFull="CCF BDCI 2023 & Data Mining Course Project (2023.10 - 2023.12)"
     affiliation="Tongji University"
     materialLink="https://www.datafountain.cn/competitions/982"
-    codeLink="https://github.com/Motion115/DF-book-class-prediction"
+    codeLink="https://github.com/ruishizou/DF-book-class-prediction"
   />,
   <PubEntry
     paperTitle="Music Patterns and Music Models"
@@ -26,8 +26,8 @@ const projList = [
     authors={<>Team Lead</>}
     venueType="Competition"
     venueFull="China Collegiate Computing Contest - HCI Innovation Competition 2023"
-    exploreLink="https://motion115.github.io/iTutor"
-    codeLink="https://github.com/Motion115/iTutor"
+    exploreLink="https://ruishizou.github.io/iTutor"
+    codeLink="https://github.com/ruishizou/iTutor"
     awardName="Third Prize (top 3%)"
     affiliation="Tongji University"
   />,
@@ -37,7 +37,7 @@ const projList = [
     venueType="Course"
     venueFull="Multimedia Course Project (2023.3 - 2023.6)"
     paperLink="https://drive.google.com/file/d/1CYStKrj8HM1veDg_hFkM0_1UsXBbYoXS/view?usp=drive_link"
-    codeLink="https://github.com/Motion115/UI2Vec"
+    codeLink="https://github.com/ruishizou/UI2Vec"
     affiliation="Tongji University"
   />,
   <PubEntry

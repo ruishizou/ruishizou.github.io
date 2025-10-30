@@ -10,8 +10,8 @@ import GistVisInteractive from "@/assets/teaser/Gistvis_interactive.gif";
 const projectList = [
   <ProjectCard
     projectTitle="Paper Constellations"
-    codeLink="https://github.com/Motion115/paper-constellations"
-    exploreLink="https://motion115.github.io/paper-constellations/"
+    codeLink="https://github.com/ruishizou/paper-constellations"
+    exploreLink="https://ruishizou.github.io/paper-constellations/"
     abstractContent={
       <>
         Paper Constellation is an AI-curated information space to support
@@ -24,8 +24,8 @@ const projectList = [
   />,
   //   <ProjectCard
   //   projectTitle="GistVis"
-  //   codeLink="https://github.com/Motion115/paper-constellations"
-  //   exploreLink="https://motion115.github.io/paper-constellations/"
+  //   codeLink="https://github.com/ruishizou/paper-constellations"
+  //   exploreLink="https://ruishizou.github.io/paper-constellations/"
   //   abstractContent={
   //     <>
   //     </>

@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.react-tweet-theme {
+  /* Override the body font properties */
+  --tweet-body-font-size: 0.95rem !important;
+  --tweet-body-font-weight: 400 !important;
+  --tweet-body-line-height: 1.25rem !important;
+  --tweet-font-family: "Fira Sans" !important; 
+}

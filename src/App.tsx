@@ -37,7 +37,7 @@ const App: React.FC = () => {
             <Text>
               If you like{" "}
               <a
-                href="https://github.com/Motion115/minimal-academic-folio"
+                href="https://github.com/ruishizou/minimal-academic-folio"
                 target="_blank"
                 rel="noreferrer noopener"
               >
