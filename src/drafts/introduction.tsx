@@ -2,7 +2,7 @@ import { Typography, Alert, Divider } from "antd";
 import OuterLink from "../modules/outlinks";
 
 import PersonalInfo from "../modules/info";
-import Selfie from "@/assets/selfie2.png";
+import Selfie from "@/assets/selfie4.png";
 const { Text, Paragraph, Title } = Typography;
 
 const PersonalIntrouction = () => {
@@ -22,7 +22,7 @@ const PersonalIntrouction = () => {
         <>
           <Paragraph>
             <u>Interests</u>: Human-computer Interaction · Visualization ·
-            Human-centered AI · Health
+            Human-centered AI · Health Informatics
           </Paragraph>
           <Paragraph>
             Hello! I am Ruishi (Ray) Zou, a second-year master's
@@ -115,8 +115,8 @@ const PersonalIntrouction = () => {
                 <OuterLink
                   link="https://idvxlab.com/"
                   text="Intelligent Big Data Visualization Lab (iDVx Lab)"
-                />
-                , during which I co-authored an IEEE TVCG paper and was granted
+                />{" "}
+                (2022-2023), during which I co-authored an IEEE TVCG paper and was granted
                 the opportunity to intern at the
                 <OuterLink
                   link="https://ava.antv.antgroup.com/en/"
@@ -131,7 +131,7 @@ const PersonalIntrouction = () => {
                   link="https://see.tongji.edu.cn/info/1398/11358.htm"
                   text="Prof. Chen Ye"
                 />
-                , I run (and am still running) an HCI interest group at Tongji
+                , I run (and am still running, 2023-Present) an HCI interest group at Tongji
                 University. Using my knowledge, I tutor and collaborate with
                 undergraduate students on interest-driven research projects on
                 HCI. Such efforts have resulted in award-winning publications at
@@ -141,9 +141,9 @@ const PersonalIntrouction = () => {
                 I have also been a remote visiting student at the{" "}
                 <OuterLink
                   link="https://hailab.io/"
-                  text="Human-Centered AI Lab"
+                  text="Human-Centered Artificial Intelligence Lab"
                 />{" "}
-                at Northeastern University, advised by
+                at Northeastern University (2023-Present), advised by
                 <OuterLink
                   link="https://www.dakuowang.com/"
                   text="Prof. Dakuo Wang"
@@ -163,7 +163,7 @@ const PersonalIntrouction = () => {
                 and CHI.
               </li>
               <li>
-                I am currently visiting the{" "}
+                I am currently a visiting member of the{" "}
                 <OuterLink link="https://sea-lab.space/" text="SEA Lab" /> at
                 Columbia University advised by{" "}
                 <OuterLink
@@ -171,12 +171,12 @@ const PersonalIntrouction = () => {
                   text="Prof. Xuhai (Orson) Xu"
                 />
                 , working on projects at the intersection of HCI, AI, and
-                health.
+                health informatics.
               </li>
             </ul>
             <Paragraph>
               Fun facts: 1) before deep diving into new knowledge, I love to
-              approach it with first-order intuitions, hence my love for
+              approach it with first-order intuitions, hence my passion for
               narrating insights with visualizations; 2) I usually prefer my
               interface to be direct manipulation, even in the age of chatbots;
               3) besides research, I am a car/aviation enthusiast: I watch

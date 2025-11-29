@@ -69,41 +69,49 @@ const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
               icon={<FilePdfOutlined />}
               link={props.paperLink ? props.paperLink : ""}
               text="Paper"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<PaperClipOutlined />}
               link={props.preprintLink ? props.preprintLink : ""}
               text="Preprint"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<SearchOutlined />}
               link={props.exploreLink ? props.exploreLink : ""}
               text="Demo"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<GithubOutlined />}
               link={props.codeLink ? props.codeLink : ""}
               text="Code"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<VideoCameraOutlined />}
               link={props.videoLink ? props.videoLink : ""}
               text="Video"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<AudioOutlined />}
               link={props.presentationLink ? props.presentationLink : ""}
               text="Presentation"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<FontAwesomeIcon icon={faPhotoFilm} size="sm" />}
               link={props.slidesLink ? props.slidesLink : ""}
               text="Slides"
+              size="small"
             ></LinkTag>
             <LinkTag
               icon={<InfoCircleOutlined />}
               link={props.materialLink ? props.materialLink : ""}
               text="Material"
+              size="small"
             ></LinkTag>
           </Space>
         </>

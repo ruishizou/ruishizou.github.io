@@ -36,6 +36,17 @@ const webLink = [
       </a>
     }
   />,
+    <TimeEntry
+    content={
+      <a
+        href="https://colorlab.antv.vision/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> AntV ColorLab (for color analysis in visualizations)
+      </a>
+    }
+  />,
   <TimeEntry
     content={
       <a
