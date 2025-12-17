@@ -28,6 +28,17 @@ const webLink = [
   <TimeEntry
     content={
       <a
+        href="https://www.timeanddate.com/worldclock/converter.html"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Find Time for International Collaboration
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
         href="https://web.archive.org/web/20221205110506/https://antv.vision/en/docs/specification/language/palette/"
         target="_blank"
         rel="noreferrer noopener"
@@ -60,6 +71,28 @@ const webLink = [
   />,
   <TimeEntry
     content={
+      <a
+        href="https://freetouse.com/music"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Background Music Inspirations
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
+        href="https://www.flaticon.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Icon Inspirations
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
       <a href="https://lawsofux.com/" target="_blank" rel="noreferrer noopener">
         <LinkOutlined /> Laws of UX
       </a>
@@ -84,6 +117,17 @@ const webLink = [
         rel="noreferrer noopener"
       >
         <LinkOutlined /> Git Commit Messages Guide (Chinese Ver.)
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
+        href="https://www.youtube.com/watch?v=Ala6PHlYjmw"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Understanding Git Operations
       </a>
     }
   />,
