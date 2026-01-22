@@ -12,13 +12,7 @@ const App: React.FC = () => {
   const { shouldWrap } = useScreenStore();
   const widthPercentage = shouldWrap ? "90%" : "70%";
 
-  const getTodayMonth = () => {
-    const currentDate = new Date();
-    const monthNameLong = currentDate.toLocaleString("en-US", {
-      month: "long",
-    });
-    return `${monthNameLong} ${currentDate.getFullYear()}`
-  }
+  const LAST_UPDATED = __LAST_UPDATED__;
 
   return (
     <ConfigProvider theme={GLOBAL_STYLE}>
@@ -32,7 +26,7 @@ const App: React.FC = () => {
           </Header>
           <Routing></Routing>
           <Footer>
-            <Text>Last updated: {getTodayMonth()}. All Rights Reserved.</Text>
+            <Text>Last updated: {LAST_UPDATED}. All Rights Reserved.</Text>
             <br />
             <Text>
               If you like{" "}

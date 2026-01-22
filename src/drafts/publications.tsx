@@ -6,6 +6,7 @@ import LegalaiImg from "@/assets/teaser/legalai.png";
 import RPASurveyImg from "@/assets/teaser/rpa_survey.png";
 import ICSImg from "@/assets/teaser/ics.png";
 import MFVImg from "@/assets/teaser/mfv.png";
+import MINDImg from "@/assets/teaser/mind.webp";
 import iTutorImg from "@/assets/teaser/itutor.png";
 import chart2vecImg from "@/assets/teaser/chart2vec.png";
 import { PubEntrySpec } from "../modules/types/pubEntry";
@@ -31,6 +32,23 @@ const publicationData: PubEntrySpec[]  = [
     materialLink:
       "https://osf.io/gv97m/?viewonly=772184512cff4fa5a21dd8a953782e82",
     teaser: MFVImg,
+  },
+  {
+    paperTitle: "MIND: Empowering Mental Health Clinicians with Multimodal Data Insights through a Narrative Dashboard",
+    authors: (
+      <>
+        <b>Ruishi Zou</b>*, Shiyu Xu*, Margaret Morris, Jihan Ryu, Timothy Becker, Nicholas Allen, Anne Marie Albano, Randy Auerbach, Dan Adler, Varun Mishra, Lace Padilla, Dakuo Wang, Ryan Sultan, Xuhai "Orson" Xu
+      </>
+    ),
+    inSelectedCollection: true,
+    venueType: "Conference",
+    venueShort: "CHI'26",
+    venueFull: "[Conditionally Accepted] In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26)",
+    preprintLink: "https://arxiv.org/abs/2601.14641",
+    exploreLink: "https://sea-lab.space/MIND/",
+    codeLink: "https://github.com/sea-lab-space/MIND",
+    paperLink: "",
+    teaser: MINDImg,
   },
   {
     paperTitle:
