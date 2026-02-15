@@ -22,7 +22,7 @@ const PersonalIntrouction = () => {
         <>
           <Paragraph>
             <u>Interests</u>: Human-computer Interaction · Visualization ·
-            Human-centered AI · Health Informatics
+            Human-centered AI · Informatics
           </Paragraph>
           <Paragraph>
             Hello! I am Ruishi (Ray) Zou, a second-year master's

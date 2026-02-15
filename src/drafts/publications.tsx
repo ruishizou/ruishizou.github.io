@@ -1,36 +1,39 @@
 import PubList from "../modules/pub_list";
 import PubEntry from "../modules/group_items/pub_entry_spec";
 import GistVisImg from "@/assets/teaser/Gistvis.png";
-import GistVisInteractive from "@/assets/teaser/Gistvis_interactive.gif";
+import GistVisInteractive from "@/assets/teaser/gistvis.gif";
+import MINDImg from "@/assets/teaser/mind.webp";
+import MINDInteractive from "@/assets/teaser/mind.gif";
 import LegalaiImg from "@/assets/teaser/legalai.png";
 import RPASurveyImg from "@/assets/teaser/rpa_survey.png";
 import ICSImg from "@/assets/teaser/ics.png";
-import MFVImg from "@/assets/teaser/mfv.png";
-import MINDImg from "@/assets/teaser/mind.webp";
+import MFVImg from "@/assets/teaser/mfv.webp";
 import iTutorImg from "@/assets/teaser/itutor.png";
 import chart2vecImg from "@/assets/teaser/chart2vec.png";
 import { PubEntrySpec } from "../modules/types/pubEntry";
 
+import { Typography, Space } from "antd";
+const { Text } = Typography;
 
 // --- PUBLICATION DATA (JSON-like Array of Objects) ---
 
 const publicationData: PubEntrySpec[]  = [
   {
     paperTitle:
-      "Designing and Evaluating Sampling Strategies for Multiple-Forecast Visualization (MFV)",
+      "Striking a Balance: Evaluating How Aggregations of Multiple Forecasts Impact Judgment Under Uncertainty",
     authors: (
       <>
-        <b>Ruishi Zou</b>, Siyi Wu, Bingsheng Yao, Dakuo Wang, Lace Padilla
+        <b>Ruishi Zou</b>, Siyi Wu, Racquel Fygenson, Bingsheng Yao, Dakuo Wang, Lace Padilla
       </>
     ),
     inSelectedCollection: false,
-    venueType: "arXiv",
-    venueShort: "arXiv",
-    venueFull: "arXiv Preprint",
+    venueType: "Conference",
+    venueShort: "PacificVis'26",
+    venueFull: "[To appear] In 2026 IEEE 19th Pacific Visualization Conference (PacificVis)",
     preprintLink: "https://arxiv.org/abs/2411.02576",
     paperLink: "",
     materialLink:
-      "https://osf.io/gv97m/?viewonly=772184512cff4fa5a21dd8a953782e82",
+      "https://osf.io/vc3kn/",
     teaser: MFVImg,
   },
   {
@@ -49,6 +52,7 @@ const publicationData: PubEntrySpec[]  = [
     codeLink: "https://github.com/sea-lab-space/MIND",
     paperLink: "",
     teaser: MINDImg,
+    teaserInteractive: MINDInteractive,
   },
   {
     paperTitle:
@@ -130,7 +134,7 @@ const publicationData: PubEntrySpec[]  = [
         {" "}
       </>
     ),
-    inSelectedCollection: true,
+    inSelectedCollection: false,
     venueType: "Conference",
     venueShort: "NAACL'24",
     venueFull:
@@ -167,7 +171,7 @@ const publicationData: PubEntrySpec[]  = [
         <b>Ruishi Zou</b>, Zi Ye, Chen Ye {" "}
       </>
     ),
-    inSelectedCollection: true,
+    inSelectedCollection: false,
     venueType: "Conference",
     venueShort: "UIST'23",
     venueFull:
@@ -195,7 +199,10 @@ const PublicationDisplayList = ({ isSelected }: { isSelected: boolean }) => {
 
   return (
     <>
-      <p>* denotes equal contribution</p>
+    <div style={{ display: "flex", gap: "10px" }}>
+      {/* {isSelected && <Text type="secondary">Showing: {filteredData.length}/{publicationData.length},</Text>} */}
+      <Text>* denotes equal contribution</Text>
+    </div>
       <PubList itemList={displayPubList} isSelcted={isSelected} />
     </>
   );
