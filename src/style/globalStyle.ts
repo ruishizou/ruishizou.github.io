@@ -23,5 +23,12 @@ export const GLOBAL_STYLE = {
       subMenuItemBorderRadius: 6,
       horizontalItemBorderRadius: 8,
     },
+    Tag: {
+      styles: {
+        root: {
+          marginInlineEnd: 8,
+        },
+      },
+    },
   },
 };

@@ -3,16 +3,14 @@ import { Layout, Divider, Space, Typography } from "antd";
 import ProjectArchiveList from "../drafts/deprecated/project_archive";
 import ProjectDisplayList from "../drafts/projects";
 import WebLinks from "../drafts/links";
-import PublicationDisplayList from "../drafts/publications";
+import { PublicationList } from "@/modules/index";
+import publicationData from "../drafts/publications";
 const { Paragraph, Text, Title } = Typography;
 const { Content, Header, Footer } = Layout;
 
 const Publication: React.FC = () => (
   <Content id="Publications">
-    <Title level={4} id="Publications">
-      Publications
-    </Title>
-    <PublicationDisplayList isSelected={false} />
+    <PublicationList publicationData={publicationData} isSelected={false} />
   </Content>
 );
 

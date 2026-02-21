@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
   return (
     <ConfigProvider theme={GLOBAL_STYLE}>
-      <Space direction="vertical" style={{ width: "100%" }}>
+      <Space orientation="vertical" style={{ width: "100%" }}>
         <Layout
           style={{ width: widthPercentage, padding: "1%", margin: "0 auto" }}
         >

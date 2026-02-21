@@ -1,6 +1,6 @@
 import { Typography } from "antd";
-import PubEntry from "../../modules/group_items/pub_entry_spec";
-import PubList from "../../modules/pub_list";
+import PubEntry from "../../components/publicationEntry";
+import PubList from "../../modules/publicationList";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const projArchiveList = [

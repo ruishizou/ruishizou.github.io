@@ -1,53 +1,29 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   FilePdfOutlined,
   SearchOutlined,
   GithubOutlined,
   VideoCameraOutlined,
   AudioOutlined,
-  TrophyOutlined,
   InfoCircleOutlined,
-  ArrowDownOutlined,
-  ArrowUpOutlined,
   PaperClipOutlined,
 } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMeasure } from "react-use";
 import {
   Image,
   Space,
   Typography,
-  Tag,
-  Button,
-  Divider,
-  Flex,
   Card,
 } from "antd";
 import colorProjection from "constants";
 import "../constanats/constants";
-import { Link } from "react-router-dom";
-import { colorBg, colorPrimary } from "../../style/globalStyle";
-import useScreenStore from "../../store";
+import useScreenStore from "../store";
 import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
-import LinkTag from "./link_tag";
+import LinkTag from "@/components/Links/linkTag";
+import { ProjectCardSpec } from "@/types/spec";
 const { Text } = Typography;
 
-interface ProjectCardSpec {
-  projectTitle: string;
-  awardLink?: string;
-  paperLink?: string;
-  preprintLink?: string;
-  exploreLink?: string;
-  codeLink?: string;
-  videoLink?: string;
-  presentationLink?: string;
-  materialLink?: string;
-  slidesLink?: string;
-  abstractContent?: JSX.Element;
-  teaser?: string;
-  teaserInteractive?: string;
-}
 
 const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
   const { shouldWrap } = useScreenStore();
@@ -121,6 +97,45 @@ const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
 
   const [hovered, setHovered] = useState(false);
 
+  // Fetch teaser images from public/assets/teaser
+  const [teaserSrc, setTeaserSrc] = useState<string | undefined>(undefined);
+  const [teaserInteractiveSrc, setTeaserInteractiveSrc] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchImage = async (filename: string | undefined): Promise<string | undefined> => {
+      if (!filename) return undefined;
+      try {
+        const response = await fetch(`/assets/teaser/${filename}`);
+        if (!response.ok) return undefined;
+        const blob = await response.blob();
+        return URL.createObjectURL(blob);
+      } catch {
+        return undefined;
+      }
+    };
+
+    const loadImages = async () => {
+      const [teaser, teaserInteractive] = await Promise.all([
+        fetchImage(props.teaser),
+        fetchImage(props.teaserInteractive),
+      ]);
+      if (isMounted) {
+        setTeaserSrc(teaser);
+        setTeaserInteractiveSrc(teaserInteractive);
+      }
+    };
+
+    loadImages();
+
+    return () => {
+      isMounted = false;
+      if (teaserSrc) URL.revokeObjectURL(teaserSrc);
+      if (teaserInteractiveSrc) URL.revokeObjectURL(teaserInteractiveSrc);
+    };
+  }, [props.teaser, props.teaserInteractive]);
+
   return (
     <Card
       hoverable
@@ -135,7 +150,7 @@ const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
         </Text>
       }
       cover={
-        props.teaser && (
+        teaserSrc && (
           <div
             style={{
               display: "flex",
@@ -144,7 +159,7 @@ const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
               overflow: "hidden",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               boxShadow:
-                hovered && props.teaserInteractive
+                hovered && teaserInteractiveSrc
                   ? "0 0 10px rgba(0, 0, 0, 0.1)"
                   : undefined,
               height: 280
@@ -154,9 +169,9 @@ const ProjectCard: React.FC<ProjectCardSpec> = (props: ProjectCardSpec) => {
           >
             <Image
               src={
-                hovered && props.teaserInteractive
-                  ? props.teaserInteractive
-                  : props.teaser
+                hovered && teaserInteractiveSrc
+                  ? teaserInteractiveSrc
+                  : teaserSrc
               }
               style={{
                 maxWidth: "95%",

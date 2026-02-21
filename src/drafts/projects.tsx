@@ -1,10 +1,10 @@
 import { Typography } from "antd";
-import PubEntry from "../modules/group_items/pub_entry_spec";
-import PubList from "../modules/pub_list";
+import { PublicationEntry } from "@/components/index";
+import PubList from "../modules/publicationList";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const projList = [
-  <PubEntry
+  <PublicationEntry
     paperTitle="Predicting Book Categories Based on Book Metadata and Web Network Relationships"
     authors={<>Project Leader</>}
     venueType="Course"
@@ -13,14 +13,14 @@ const projList = [
     materialLink="https://www.datafountain.cn/competitions/982"
     codeLink="https://github.com/ruishizou/DF-book-class-prediction"
   />,
-  <PubEntry
+  <PublicationEntry
     paperTitle="Music Patterns and Music Models"
     authors={<>Contributor, Advised by Prof. Roger B. Dannenberg</>}
     venueType="Research"
     venueFull="Internship Project (2023.4 - 2023.10)"
     affiliation="Carnegie Mellon University (Remote)"
   />,
-  <PubEntry
+  <PublicationEntry
     paperTitle="iTutor: A Generative Tutorial System for Teaching the Elders to Use
           Smartphone Applications"
     authors={<>Team Lead</>}
@@ -31,7 +31,7 @@ const projList = [
     awardName="Third Prize (top 3%)"
     affiliation="Tongji University"
   />,
-  <PubEntry
+  <PublicationEntry
     paperTitle="UI2Vec: A Multimodal Embedding Method for Robust UI Classification"
     authors={<>Independent Work</>}
     venueType="Course"
@@ -40,7 +40,7 @@ const projList = [
     codeLink="https://github.com/ruishizou/UI2Vec"
     affiliation="Tongji University"
   />,
-  <PubEntry
+  <PublicationEntry
     paperTitle="Forest Orchestra – Interactive Conducting Game for Music Education"
     authors={<>Contributor</>}
     venueType="Competition"
@@ -48,7 +48,7 @@ const projList = [
     awardName="Award in Creativity (top 4%)"
     affiliation="Tongji University"
   />,
-  <PubEntry
+  <PublicationEntry
     paperTitle="Data-driven Approach on Identifying Systemic Financial Risk"
     authors={<>Contributor</>}
     venueType="Research"
@@ -57,8 +57,6 @@ const projList = [
   />,
 ];
 
-const ProjectDisplayList = () => {
-  return <PubList itemList={projList} />;
-};
+
 
 export default ProjectDisplayList;

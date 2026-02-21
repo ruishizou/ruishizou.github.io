@@ -1,4 +1,4 @@
-import TimeEntry from "../modules/group_items/time_entry";
+import TimeEntry from "../components/timeEntry";
 import TimedPubList from "../modules/timed_list";
 import { LinkOutlined } from "@ant-design/icons";
 

@@ -41,7 +41,7 @@ const TimedList: React.FC<TimedListSpec> = (props) => {
 
   return (
     <div>
-      <Space direction="vertical" style={{ width: "100%" }}>
+      <Space orientation="vertical" style={{ width: "100%" }}>
         {displayedPub}
         {expandableTextDisp !== "redundant" ? (
           <Button

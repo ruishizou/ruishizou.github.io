@@ -1,17 +1,17 @@
 import { Space, Typography } from "antd";
-import WebPublicity from "../modules/group_items/web_publicity";
+import WebPublicity from "../components/publicityEntry";
 import TimedPubList from "../modules/timed_list";
 import { ZhihuOutlined, LinkOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBilibili } from "@fortawesome/free-brands-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
-import OuterLink from "../modules/outlinks";
+import OuterLink from "../components/Links/linkText";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const PrecenseOnWeb = () => {
   return (
     <>
-      <Space direction="vertical" style={{ width: "100%" }}>
+      <Space orientation="vertical" style={{ width: "100%" }}>
         <WebPublicity
           year={2023}
           where="Tongji CEIE News"

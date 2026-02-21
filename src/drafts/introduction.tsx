@@ -1,5 +1,5 @@
 import { Typography, Alert, Divider } from "antd";
-import OuterLink from "../modules/outlinks";
+import OuterLink from "../components/Links/linkText";
 
 import PersonalInfo from "../modules/info";
 import Selfie from "@/assets/selfie4.png";

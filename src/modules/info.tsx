@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import { faOrcid } from "@fortawesome/free-brands-svg-icons";
 import { Space, Typography, Image, Divider, Layout, Button, Flex } from "antd";
-import LinkIcon from "./group_items/link_icon";
+import LinkIcon from "../components/Links/linkIcon";
 import useScreenStore from "../store";
 
 const { Text, Paragraph, Title } = Typography;
@@ -74,7 +74,7 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
       gap="middle"
     >
       <Space
-        direction="vertical"
+        orientation="vertical"
         style={{
           flex: "7 1 1%",
           width: "100%",
@@ -99,7 +99,7 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
       </Space>
 
       <Space
-        direction="vertical"
+        orientation="vertical"
         style={{
           flex: "3 1 1%",
           minWidth: 220,

@@ -1,7 +1,5 @@
-import { Typography } from "antd";
-import TimeEntry from "../modules/group_items/time_entry";
+import TimeEntry from "../components/timeEntry";
 import TimedPubList from "../modules/timed_list";
-const { Title, Paragraph, Text, Link } = Typography;
 
 const updatesList = [
   <TimeEntry

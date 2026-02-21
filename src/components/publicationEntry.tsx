@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   FilePdfOutlined,
   SearchOutlined,
@@ -11,19 +11,24 @@ import {
   ArrowDownOutlined,
   ArrowUpOutlined,
   PaperClipOutlined,
+  DropboxCircleFilled,
+  DropboxOutlined,
 } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMeasure } from "react-use";
 import { Image, Space, Typography, Tag, Button, Divider, Flex } from "antd";
-import LinkTag from "./link_tag";
-import colorProjection from "../constanats/constants";
-import "../constanats/constants";
+import LinkTag from "@/components/Links/linkTag";
+import colorProjection from "@/constanats/constants";
+import "@/constanats/constants";
 import { Link } from "react-router-dom";
-import { colorBg, colorPrimary } from "../../style/globalStyle";
-import useScreenStore from "../../store";
+import { colorBg, colorPrimary } from "../style/globalStyle";
+import useScreenStore from "../store";
 import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
-import { PubEntrySpec } from "../types/pubEntry";
+import { PubEntrySpec } from "../types/spec";
 const { Text } = Typography;
+
+
+
 
 const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
   const { shouldWrap } = useScreenStore();
@@ -84,7 +89,7 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
               text="Slides"
             ></LinkTag>
             <LinkTag
-              icon={<InfoCircleOutlined />}
+              icon={<DropboxOutlined />}
               link={props.materialLink ? props.materialLink : ""}
               text="Material"
             ></LinkTag>
@@ -113,6 +118,45 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
   const [flexboxRef, { x, y, width, height, top, right, bottom, left }] =
     useMeasure<HTMLElement>();
 
+  // Fetch teaser images from public/assets/teaser
+  const [teaserSrc, setTeaserSrc] = useState<string | undefined>(undefined);
+  const [teaserInteractiveSrc, setTeaserInteractiveSrc] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchImage = async (filename: string | undefined): Promise<string | undefined> => {
+      if (!filename) return undefined;
+      try {
+        const response = await fetch(`/assets/teaser/${filename}`);
+        if (!response.ok) return undefined;
+        const blob = await response.blob();
+        return URL.createObjectURL(blob);
+      } catch {
+        return undefined;
+      }
+    };
+
+    const loadImages = async () => {
+      const [teaser, teaserInteractive] = await Promise.all([
+        fetchImage(props.teaser),
+        fetchImage(props.teaserInteractive),
+      ]);
+      if (isMounted) {
+        setTeaserSrc(teaser);
+        setTeaserInteractiveSrc(teaserInteractive);
+      }
+    };
+
+    loadImages();
+
+    return () => {
+      isMounted = false;
+      if (teaserSrc) URL.revokeObjectURL(teaserSrc);
+      if (teaserInteractiveSrc) URL.revokeObjectURL(teaserInteractiveSrc);
+    };
+  }, [props.teaser, props.teaserInteractive]);
+
   return (
     <Flex
       style={{
@@ -125,11 +169,10 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
       onMouseLeave={() => setHovered(false)}
       ref={flexboxRef}
     >
-      {props.teaser && (
+      {teaserSrc && (
         <div
           style={{
             maxWidth: "200px",
-            // maxHeight: height,
             maxHeight: height,
             display: "flex",
             justifyContent: "center",
@@ -137,16 +180,16 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
             overflow: "hidden",
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             boxShadow:
-              hovered && props.teaserInteractive
+              hovered && teaserInteractiveSrc
                 ? "0 0 10px rgba(0, 0, 0, 0.1)"
                 : undefined,
           }}
         >
           <Image
             src={
-              hovered && props.teaserInteractive
-                ? props.teaserInteractive
-                : props.teaser
+              hovered && teaserInteractiveSrc
+                ? teaserInteractiveSrc
+                : teaserSrc
             }
             style={{
               maxWidth: "95%",
@@ -166,7 +209,7 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
         {props.affiliation ? (
           <>
             <Text italic={true}>{props.affiliation}</Text>
-            <Divider type="vertical" />
+            <Divider orientation="vertical" />
           </>
         ) : null}
         <Text style={{ padding: "0 0 4px 0" }}>{props.authors}</Text>
@@ -176,7 +219,7 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
               <b>{props.venueShort ? props.venueShort : props.venueType}</b>
             </i>
           </Tag>
-          <Text italic={true}>{props.venueFull}</Text>
+          <Text italic={true}>{" "}{props.venueFull}</Text>
 
           {props.awardName ? (
             <div>

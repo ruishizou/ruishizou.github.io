@@ -1,4 +1,7 @@
-const OuterLink = (props: { text: string; link: string }) => {
+
+
+
+const OuterLink: React.FC<{ text: string; link: string }> = (props) => {
   return (
     <>
       {" "}
