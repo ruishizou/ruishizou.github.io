@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Divider, Space, Typography, Alert, Carousel } from "antd";
+import { Layout, Divider, Space, Typography, Carousel } from "antd";
 
 
 import NewsDisplayList from "../drafts/updates";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Space, Typography, Tag, Divider } from "antd";
 import { Link } from "react-router-dom";
 import { LinkOutlined } from "@ant-design/icons";
@@ -29,18 +29,12 @@ const PublicationList: React.FC<PublicationListProps> = ({
     }
   });
 
-
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [displayedPub, setDisplayedPub] = useState<PubEntrySpec[]>(filteredData);
 
-  // Sync displayedPub with filteredData and selectedTags
-  useEffect(() => {
-    if (selectedTags.length === 0) {
-      setDisplayedPub(filteredData);
-    } else {
-      setDisplayedPub(filteredData.filter((pub) => selectedTags.includes(pub.venueType)));
-    }
-  }, [filteredData, selectedTags]);
+  // Derive displayedPub directly from filteredData and selectedTags
+  const displayedPub = selectedTags.length === 0
+    ? filteredData
+    : filteredData.filter((pub) => selectedTags.includes(pub.venueType));
 
   const handleChange = (tag: string, checked: boolean) => {
     const nextSelectedTags = checked

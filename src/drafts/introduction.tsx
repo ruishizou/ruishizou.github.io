@@ -83,7 +83,7 @@ const PersonalIntrouction = () => {
               // fontWeight: "bold",
             }}
             type="warning"
-            message={
+            title={
               <Text>
                 🔎{" "}
                 <b>

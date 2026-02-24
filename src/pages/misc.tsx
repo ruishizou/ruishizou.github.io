@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Divider, Space, Typography, Carousel, Alert } from "antd";
+import { Layout, Divider, Space, Typography } from "antd";
 import ProjectArchiveList from "../drafts/deprecated/project_archive";
 import ProjectDisplayList from "../drafts/projects";
 import PrecenseOnWeb from "../drafts/deprecated/web_presence";

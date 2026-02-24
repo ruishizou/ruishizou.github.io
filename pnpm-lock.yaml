@@ -11,9 +11,6 @@ importers:
       '@ant-design/icons':
         specifier: ^6.0.2
         version: 6.0.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@ant-design/v5-patch-for-react-19':
-        specifier: ^1.0.3
-        version: 1.0.3(antd@6.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@fortawesome/fontawesome-svg-core':
         specifier: ^6.4.2
         version: 6.7.2
@@ -72,6 +69,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^5.0.4
         version: 5.0.4(vite@7.1.7(@types/node@24.5.2)(jiti@1.21.7)(terser@5.44.0)(yaml@2.8.1))
+      baseline-browser-mapping:
+        specifier: ^2.10.0
+        version: 2.10.0
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -129,14 +129,6 @@ packages:
     peerDependencies:
       react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  '@ant-design/v5-patch-for-react-19@1.0.3':
-    resolution: {integrity: sha512-iWfZuSUl5kuhqLUw7jJXUQFMMkM7XpW7apmKzQBQHU0cpifYW4A79xIBt9YVO5IBajKpPG5UKP87Ft7Yrw1p/w==}
-    engines: {node: '>=12.x'}
-    peerDependencies:
-      antd: '>=5.22.6'
-      react: '>=19.0.0'
-      react-dom: '>=19.0.0'
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -964,8 +956,9 @@ packages:
   async@3.2.6:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
 
-  baseline-browser-mapping@2.8.8:
-    resolution: {integrity: sha512-be0PUaPsQX/gPWWgFsdD+GFzaoig5PXaUC1xLkQiYdDnANU8sMnHoQd8JhbJQuvTWrWLyeFN9Imb5Qtfvr4RrQ==}
+  baseline-browser-mapping@2.10.0:
+    resolution: {integrity: sha512-lIyg0szRfYbiy67j9KN8IyeD7q7hcmqnJ1ddWmNt19ItGpNN64mnllmxUNFIOdOm6by97jlL6wfpTTJrmnjWAA==}
+    engines: {node: '>=6.0.0'}
     hasBin: true
 
   braces@3.0.3:
@@ -1666,12 +1659,6 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       throttle-debounce: 5.0.2
-
-  '@ant-design/v5-patch-for-react-19@1.0.3(antd@6.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
-    dependencies:
-      antd: 6.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -2529,7 +2516,7 @@ snapshots:
 
   async@3.2.6: {}
 
-  baseline-browser-mapping@2.8.8: {}
+  baseline-browser-mapping@2.10.0: {}
 
   braces@3.0.3:
     dependencies:
@@ -2537,7 +2524,7 @@ snapshots:
 
   browserslist@4.26.2:
     dependencies:
-      baseline-browser-mapping: 2.8.8
+      baseline-browser-mapping: 2.10.0
       caniuse-lite: 1.0.30001745
       electron-to-chromium: 1.5.226
       node-releases: 2.0.21

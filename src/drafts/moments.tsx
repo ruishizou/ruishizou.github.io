@@ -1,4 +1,4 @@
-import { Alert, Carousel, Flex, Typography } from "antd";
+import { Flex, Typography } from "antd";
 import { Tweet } from "react-tweet";
 import "../index.css";
 const { Text } = Typography;

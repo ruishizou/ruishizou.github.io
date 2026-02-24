@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   FilePdfOutlined,
   SearchOutlined,
@@ -15,7 +15,7 @@ import {
   DropboxOutlined,
 } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMeasure } from "react-use";
+import { useMeasure, useWindowSize } from "react-use";
 import { Image, Space, Typography, Tag, Button, Divider, Flex } from "antd";
 import LinkTag from "@/components/Links/linkTag";
 import colorProjection from "@/constanats/constants";
@@ -31,7 +31,7 @@ const { Text } = Typography;
 
 
 const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
-  const { shouldWrap } = useScreenStore();
+  const { width, shouldWrap } = useScreenStore();
   const [abstractContentVisible, setAbstractContentVisible] =
     useState<boolean>(false);
 
@@ -115,12 +115,19 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
     transition: "background-color 0.2s ease",
   };
 
-  const [flexboxRef, { x, y, width, height, top, right, bottom, left }] =
-    useMeasure<HTMLElement>();
+  const [flexboxRef, { height, width: flexBoxWidth }] = useMeasure<HTMLElement>();
+  const [imageHeight, setImageHeight] = useState<number | undefined>(undefined);
+
+  // Update image height responsively
+  useEffect(() => {
+    setImageHeight(height);
+  }, [shouldWrap, height, flexBoxWidth]);
 
   // Fetch teaser images from public/assets/teaser
   const [teaserSrc, setTeaserSrc] = useState<string | undefined>(undefined);
   const [teaserInteractiveSrc, setTeaserInteractiveSrc] = useState<string | undefined>(undefined);
+  const teaserUrlRef = useRef<string | undefined>(undefined);
+  const teaserInteractiveUrlRef = useRef<string | undefined>(undefined);
 
   useEffect(() => {
     let isMounted = true;
@@ -143,6 +150,9 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
         fetchImage(props.teaserInteractive),
       ]);
       if (isMounted) {
+        // Store URLs in refs for cleanup
+        teaserUrlRef.current = teaser;
+        teaserInteractiveUrlRef.current = teaserInteractive;
         setTeaserSrc(teaser);
         setTeaserInteractiveSrc(teaserInteractive);
       }
@@ -152,8 +162,9 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
 
     return () => {
       isMounted = false;
-      if (teaserSrc) URL.revokeObjectURL(teaserSrc);
-      if (teaserInteractiveSrc) URL.revokeObjectURL(teaserInteractiveSrc);
+      // Use refs for cleanup to avoid dependency on state
+      if (teaserUrlRef.current) URL.revokeObjectURL(teaserUrlRef.current);
+      if (teaserInteractiveUrlRef.current) URL.revokeObjectURL(teaserInteractiveUrlRef.current);
     };
   }, [props.teaser, props.teaserInteractive]);
 
@@ -165,19 +176,19 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
       }}
       gap="middle"
       wrap={shouldWrap}
-      onMouseEnter={() => setHovered(true)}
+      onMouseDown={() => !shouldWrap ? setHovered(true): setHovered(false)}
+      onMouseEnter={() => !shouldWrap ? setHovered(true): setHovered(false)}
       onMouseLeave={() => setHovered(false)}
-      ref={flexboxRef}
     >
       {teaserSrc && (
         <div
           style={{
-            maxWidth: "200px",
-            maxHeight: height,
+            width: shouldWrap ? "60%" : "200px",
+            minWidth: shouldWrap ? "60%" : "200px",
+            maxWidth: shouldWrap ? "60%" : "200px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            overflow: "hidden",
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             boxShadow:
               hovered && teaserInteractiveSrc
@@ -192,17 +203,14 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
                 : teaserSrc
             }
             style={{
-              maxWidth: "95%",
-              maxHeight: "95%",
-              width: "auto",
-              height: "auto",
+              height: shouldWrap ? undefined: imageHeight && imageHeight * 0.96,
               objectFit: "contain",
             }}
             preview={false}
           />
         </div>
       )}
-      <Flex vertical>
+      <Flex vertical ref={flexboxRef}>
         <Text strong={true} style={{ padding: "0 0 4px 0" }}>
           {props.paperTitle}
         </Text>

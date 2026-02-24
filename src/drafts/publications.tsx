@@ -87,6 +87,7 @@ const publicationData: PubEntrySpec[] = [
     codeLink: "https://github.com/ruishizou/GistVis",
     exploreLink: "https://ruishizou.github.io/GistVis",
     presentationLink: "https://www.youtube.com/watch?v=OIjAvoWdVCo",
+    videoLink: "https://youtu.be/GmAQp_iuKrI",
     awardName: "Best Paper Honorable Mention recognition (top 5%)",
     awardLink:
       "https://drive.google.com/file/d/1H8oKnJMCngU6uWe947Hhu_oe3P83i7n8/view?usp=sharing",
@@ -167,7 +168,7 @@ const publicationData: PubEntrySpec[] = [
     authors: (
       <>
         Qing Chen, Ying Chen, <b>Ruishi Zou</b>, Wei Shuai, Yi Guo, Jiazhe Wang,
-        Nan Cao{" "}
+        Nan Cao
       </>
     ),
     inSelectedCollection: true,

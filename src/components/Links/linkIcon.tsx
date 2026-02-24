@@ -15,7 +15,7 @@ const LinkIcon: React.FC<LinkIconProps> = (props: LinkIconProps) => {
         <a href={props.link} target="_blank" rel="noreferrer noopener">
           {props.icon}
         </a>
-        {props.separator === false ? null : <Divider type="vertical"></Divider>}
+        {props.separator === false ? null : <Divider orientation="vertical"></Divider>}
       </>
     );
   }

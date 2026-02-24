@@ -133,7 +133,7 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
           </Text>
         </div>
         <div style={{ fontSize: "20px", textAlign: "center" }}>
-          <Divider type="vertical"></Divider>
+          <Divider orientation="vertical"></Divider>
           <LinkIcon
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
             link={props.googleScholar ? props.googleScholar : ""}
