@@ -3,8 +3,6 @@ import { PubEntrySpec } from "../types/spec";
 import { Typography, Space } from "antd";
 const { Text } = Typography;
 
-// --- PUBLICATION DATA (JSON-like Array of Objects) ---
-
 const publicationData: PubEntrySpec[] = [
   {
     paperTitle:
@@ -20,7 +18,7 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "PacificVis'26",
     venueFull:
-      "[To appear] In 2026 IEEE 19th Pacific Visualization Conference (PacificVis)",
+      "In 2026 IEEE 19th Pacific Visualization Conference (PacificVis'26)",
     preprintLink: "https://arxiv.org/abs/2411.02576",
     paperLink: "",
     materialLink: "https://osf.io/vc3kn/",
@@ -41,11 +39,14 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "CHI'26",
     venueFull:
-      "[Conditionally Accepted] In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26)",
+      "In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26)",
     preprintLink: "https://arxiv.org/abs/2601.14641",
     exploreLink: "https://sea-lab.space/MIND/",
+    presentationLink: "https://www.youtube.com/watch?v=c8PE6zYSFSc",
+    videoLink: "https://youtu.be/t0QBgZ0V5uk",
     codeLink: "https://github.com/sea-lab-space/MIND",
     paperLink: "",
+    awardName: "Best Paper Honorable Mention (top 5%)",
     teaser: "mind.webp",
     teaserInteractive: "mind.gif",
   },
@@ -62,8 +63,8 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "CHI'26",
     venueFull:
-      "[Conditionally Accepted] In Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26 Posters)",
-    preprintLink: "",
+      "In Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26 Posters)",
+    preprintLink: "https://arxiv.org/abs/2603.10533",
     paperLink: "",
     teaser: "WSG_survey.webp",
   },
@@ -88,7 +89,7 @@ const publicationData: PubEntrySpec[] = [
     exploreLink: "https://ruishizou.github.io/GistVis",
     presentationLink: "https://www.youtube.com/watch?v=OIjAvoWdVCo",
     videoLink: "https://youtu.be/GmAQp_iuKrI",
-    awardName: "Best Paper Honorable Mention recognition (top 5%)",
+    awardName: "Best Paper Honorable Mention (top 5%)",
     awardLink:
       "https://drive.google.com/file/d/1H8oKnJMCngU6uWe947Hhu_oe3P83i7n8/view?usp=sharing",
     slidesLink:
@@ -135,7 +136,7 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "ACL'25",
     venueFull:
-      "Findings of the Association for Computational Linguistics: ACL 2025",
+      "In Findings of the Association for Computational Linguistics: ACL 2025",
     preprintLink: "https://arxiv.org/abs/2502.13012",
     paperLink: "https://aclanthology.org/2025.findings-acl.938/",
     exploreLink: "https://agentsurvey.hailab.io/",
@@ -156,7 +157,7 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "NAACL'24",
     venueFull:
-      "Findings of the Association for Computational Linguistics: NAACL 2024",
+      "In Findings of the Association for Computational Linguistics: NAACL 2024",
     preprintLink: "https://arxiv.org/abs/2311.09782",
     paperLink: "https://aclanthology.org/2024.findings-naacl.115/",
     teaser: "ics.png",
@@ -175,7 +176,7 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Journal",
     venueShort: "TVCG",
     venueFull:
-      "IEEE Transactions on Visualization and Computer Graphics (2024)",
+      "In IEEE Transactions on Visualization and Computer Graphics (2024)",
     paperLink: "https://doi.org/10.1109/TVCG.2024.3383089",
     preprintLink: "https://arxiv.org/abs/2306.08304",
     exploreLink: "http://chart2vec.idvxlab.com/",
@@ -195,7 +196,7 @@ const publicationData: PubEntrySpec[] = [
     venueType: "Conference",
     venueShort: "UIST'23",
     venueFull:
-      "Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST 2023 Posters)",
+      "In Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST 2023 Posters)",
     paperLink: "https://doi.org/10.1145/3586182.3616663",
     exploreLink: "https://ruishizou.github.io/iTutor",
     materialLink: "https://github.com/ruishizou/iTutor",

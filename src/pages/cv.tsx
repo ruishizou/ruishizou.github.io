@@ -21,7 +21,7 @@ const CV: React.FC = () => {
   return (
     <Content id="CV">
       <Title level={4}></Title>
-      <Paragraph> </Paragraph>
+      <Paragraph style={{ fontSize: 12, color: "gray", opacity: 0.7 }}> * The CV maybe outdated (current is the April 2026 version). Please contact me to request the latest version.</Paragraph>
       {fileData && (
         <iframe
           src={URL.createObjectURL(fileData)}

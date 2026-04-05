@@ -134,7 +134,7 @@ const webLink = [
 ];
 
 const WebLinks = () => {
-  return <TimedPubList itemList={webLink} displayLength={10} />;
+  return <TimedPubList itemList={webLink} displayLength={20} />;
 };
 
 export default WebLinks;

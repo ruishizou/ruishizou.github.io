@@ -22,21 +22,21 @@ const PersonalIntrouction = () => {
         <>
           <Paragraph>
             <u>Interests</u>: Human-computer Interaction · Visualization ·
-            Human-centered AI · Informatics
+            Human-centered AI · Health/Legal Informatics
           </Paragraph>
           <Paragraph>
             Hello! I am Ruishi (Ray) Zou, a second-year master's
-            student from UC San Diego. Previously, I earned my bachelor's degree
+            student from UC San Diego, and an incoming PhD student at Harvard University (Fall 2026 cohort). Previously, I earned my bachelor's degree
             in Computer Science from Tongji University.
           </Paragraph>
           <Paragraph>
             I <b>design and build intelligent systems</b> that empower humans to
             make sense of rich information, with the vision of applying them in
-            critical societal domains such as health. I research by making:
+            critical societal domains (e.g., health, legal). I research by making:
             I use human-centered design methods to identify task-specific needs;
             I leverage theories from human cognition and technical advances from
             visualization and artificial intelligence to inform system design;
-            and I rigorously evaluate the systems through mixed-method user
+            and I evaluate the systems through mixed-method user
             studies.
             {/* I am currently pursuing this vision by 
             working closely with{" "}
@@ -50,11 +50,15 @@ const PersonalIntrouction = () => {
           </Paragraph>
           <Paragraph>
             I am the author of several papers at top-tier academic venues,
-            including ACM CHI, IEEE TVCG, and ACL/NAACL. My work has also been
-            acknowledged by the research community, receiving an Honorable
-            Mention at CHI 2025{" "}
+            including ACM CHI, IEEE TVCG, and ACL. My work has also been
+            acknowledged by the research community, receiving Honorable
+            Mention Awards at CHI 2025{" "}
             <OuterLink
               link="https://programs.sigchi.org/chi/2025/program/content/188659"
+              text="🏅"
+            />, and CHI 2026 
+            <OuterLink
+              link="https://programs.sigchi.org/chi/2026/program/content/222396"
               text="🏅"
             />
             .
@@ -85,9 +89,9 @@ const PersonalIntrouction = () => {
             type="warning"
             title={
               <Text>
-                🔎{" "}
+                🧳{" "}
                 <b>
-                  I am actively seeking Ph.D. opportunities starting Fall 2026!
+                  I plan to attend CHI 2026 in person--looking forward to CHI-nect! <OuterLink link="https://programs.sigchi.org/chi/2026/search/content?searchKey=ruishi%20zou" text="Check out my papers in the CHI 2026 program!" />
                 </b>
                 <br />
                 👋 Always happy to connect and chat!
@@ -116,8 +120,7 @@ const PersonalIntrouction = () => {
                   link="https://idvxlab.com/"
                   text="Intelligent Big Data Visualization Lab (iDVx Lab)"
                 />{" "}
-                (2022-2023), during which I co-authored an IEEE TVCG paper and was granted
-                the opportunity to intern at the
+                (2022-2023), during which I co-authored an IEEE TVCG paper and was offered to intern at the
                 <OuterLink
                   link="https://ava.antv.antgroup.com/en/"
                   text="AVA team"
@@ -131,39 +134,42 @@ const PersonalIntrouction = () => {
                   link="https://see.tongji.edu.cn/info/1398/11358.htm"
                   text="Prof. Chen Ye"
                 />
-                , I run (and am still running, 2023-Present) an HCI interest group at Tongji
+                , I have successfully ran for 3 years (2023 - 2026, pausing at the moment) an HCI interest group at Tongji
                 University. Using my knowledge, I tutor and collaborate with
                 undergraduate students on interest-driven research projects on
-                HCI. Such efforts have resulted in award-winning publications at
-                the ACM CHI conference.
+                HCI. Such efforts have resulted in a award-winning publication at
+                the ACM CHI conference, and three others at top-tier venues.
               </li>
               <li>
-                I have also been a remote visiting student at the{" "}
-                <OuterLink
-                  link="https://hailab.io/"
-                  text="Human-Centered Artificial Intelligence Lab"
-                />{" "}
-                at Northeastern University (2023-Present), advised by
+                I have maintained a long-term collaboration with researchers from Northeastern University, working closely with  
                 <OuterLink
                   link="https://www.dakuowang.com/"
                   text="Prof. Dakuo Wang"
                 />
-                ,{" "}
+                , and{" "}
                 <OuterLink
                   link="https://www.bingshengyao.com/"
                   text="Dr. Bingsheng (Arthur) Yao"
-                />
+                />{" "}from the{" "}
+                <OuterLink
+                  link="https://hailab.io/"
+                  text="Human-Centered Artificial Intelligence Lab"
+                />{" "}
                 , and
                 <OuterLink
                   link="http://www.lacepadilla.com/"
                   text="Prof. Lace Padilla"
+                />{" "}from the{" "}
+                <OuterLink
+                  link="https://vis.khoury.northeastern.edu/"
+                  text="Khoury Vis Lab"
                 />
-                . I worked on projects spanning from HCI to NLP, with papers
+                . In the collaboration, I worked on projects spanning from HCI & VIS to NLP, with papers
                 accepted or targeting top conferences such as ACL, NAACL, VIS,
                 and CHI.
               </li>
               <li>
-                I am currently a visiting member of the{" "}
+                I have also been a visiting member of the{" "}
                 <OuterLink link="https://sea-lab.space/" text="SEA Lab" /> at
                 Columbia University advised by{" "}
                 <OuterLink
@@ -171,7 +177,10 @@ const PersonalIntrouction = () => {
                   text="Prof. Xuhai (Orson) Xu"
                 />
                 , working on projects at the intersection of HCI, AI, and
-                health informatics.
+                health informatics, with an accepted paper at CHI 2026, which received a Best Paper Honorable Mention Award.{" "}
+              </li>
+              <li>
+                ... and hopefully many more collaborations to come in the future!
               </li>
             </ul>
             <Paragraph>

@@ -17,6 +17,15 @@ const projectData: ProjectCardSpec[] = [
     teaser: "paperconstellation.png",
     teaserInteractive: "paperconstellation.gif",
   },
+  // {
+  //   projectTitle: "CSE-PACE @ UC San Diego (2025-2026)",
+  //   abstractContent: (
+  //     <>
+  //       CSE-PACE is a first-year experience for computing students at UCSD.
+  //     </>
+  //   ),
+  //   teaser: "cse-pace.webp",
+  // },
   // Add more projects as needed
 ];
 
