@@ -3,7 +3,7 @@ import { Tweet } from "react-tweet";
 import "../index.css";
 const { Text } = Typography;
 
-const MomentsList = ["1914759071015837915", "1718166820900016346"];
+const MomentsList = ["2041236685724495935", "1914759071015837915", "1718166820900016346"];
 
 const Moments = () => {
   return (

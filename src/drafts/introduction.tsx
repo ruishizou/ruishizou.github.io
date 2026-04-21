@@ -26,7 +26,10 @@ const PersonalIntrouction = () => {
           </Paragraph>
           <Paragraph>
             Hello! I am Ruishi (Ray) Zou, a second-year master's
-            student from UC San Diego, and an incoming PhD student at Harvard University (Fall 2026 cohort). Previously, I earned my bachelor's degree
+            student from UC San Diego. I am also an incoming PhD student at Harvard University, where I will be advised by             <OuterLink
+              link="https://glassmanlab.seas.harvard.edu/"
+              text="Prof. Elena Glassman"
+            />. Previously, I earned my bachelor's degree
             in Computer Science from Tongji University.
           </Paragraph>
           <Paragraph>
@@ -89,11 +92,10 @@ const PersonalIntrouction = () => {
             type="warning"
             title={
               <Text>
-                🧳{" "}
+                {/* 🧳{" "}
                 <b>
                   I plan to attend CHI 2026 in person--looking forward to CHI-nect! <OuterLink link="https://programs.sigchi.org/chi/2026/search/content?searchKey=ruishi%20zou" text="Check out my papers in the CHI 2026 program!" />
-                </b>
-                <br />
+                </b> */}
                 👋 Always happy to connect and chat!
               </Text>
             }
@@ -119,6 +121,9 @@ const PersonalIntrouction = () => {
                 <OuterLink
                   link="https://idvxlab.com/"
                   text="Intelligent Big Data Visualization Lab (iDVx Lab)"
+                />{" "}/<OuterLink
+                  link="https://qlab.org.cn/"
+                  text="Q-Lab"
                 />{" "}
                 (2022-2023), during which I co-authored an IEEE TVCG paper and was offered to intern at the
                 <OuterLink
@@ -154,7 +159,7 @@ const PersonalIntrouction = () => {
                 <OuterLink
                   link="https://hailab.io/"
                   text="Human-Centered Artificial Intelligence Lab"
-                />{" "}
+                />
                 , and
                 <OuterLink
                   link="http://www.lacepadilla.com/"

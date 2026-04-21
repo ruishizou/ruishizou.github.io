@@ -1,7 +1,7 @@
 const colorProjection: { [key: string]: string } = {
   Conference: "#085EC0",
   Journal: "#5349E0",
-  Workshop: "#5B8FF9",
+  Workshop: "#B85C00",
   arXiv: "#B31B1B",
   Pending: "#A3A3A3",
   Competition: "#907BFF",

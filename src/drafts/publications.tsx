@@ -45,7 +45,7 @@ const publicationData: PubEntrySpec[] = [
     presentationLink: "https://www.youtube.com/watch?v=c8PE6zYSFSc",
     videoLink: "https://youtu.be/t0QBgZ0V5uk",
     codeLink: "https://github.com/sea-lab-space/MIND",
-    paperLink: "",
+    paperLink: "https://dl.acm.org/doi/10.1145/3772318.3790529",
     awardName: "Best Paper Honorable Mention (top 5%)",
     teaser: "mind.webp",
     teaserInteractive: "mind.gif",
@@ -65,8 +65,43 @@ const publicationData: PubEntrySpec[] = [
     venueFull:
       "In Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI'26 Posters)",
     preprintLink: "https://arxiv.org/abs/2603.10533",
-    paperLink: "",
+    paperLink: "https://dl.acm.org/doi/10.1145/3772363.3798356",
+    exploreLink: "https://salmooonaa.github.io/graphing-inline/",
     teaser: "WSG_survey.webp",
+  },
+  {
+    paperTitle:
+      "Augmented Reading through Word-scale Graphics (WSGs)",
+    year: 2026,
+    authors: (
+      <>
+        <b>Ruishi Zou</b>
+      </>
+    ),
+    inSelectedCollection: false,
+    venueType: "Workshop",
+    venueShort: "CHI'26",
+    venueFull:
+      "In CHI 2026 Workshop on Science and Technology for Augmenting Reading (STAR)",
+    paperLink: "https://chi-star-workshop.github.io/src/assets/pdf/papers/STAR-Workshop-Zou-WSGs-Position%20-%20Ruishi%20Zou.pdf",
+    teaser: "wsg-position.webp",
+  },
+  {
+    paperTitle:
+      "PAWS: Empowering Everyday Cannabis Use Disorder Support through a Personalized AI Digital Pet on Smartwatches",
+    year: 2026,
+    authors: (
+      <>
+        Zhihan Jiang, Mengyuan Wu, <b>Ruishi Zou</b>, Shiyu Xu, Emma Macmanus, Steven Liao, Ping Zhang, Dakuo Wang, James L. David, Nabila El-Bassel, Lena Mamykina, Frances R. Levin, Ryan Sultan, Xuhai "Orson" Xu
+      </>
+    ),
+    inSelectedCollection: false,
+    venueType: "Workshop",
+    venueShort: "CHI'26",
+    venueFull:
+      "In CHI 2026 Workshop on Everyday Wearable for Personalized Health and Well-Being",
+    paperLink: "https://everydaywearableforhealth.github.io/assets/pdf/CHI26W_Submission_Digital_Pet_for_CUD.pdf",
+    teaser: "paws.webp",
   },
   {
     paperTitle:

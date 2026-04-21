@@ -6,6 +6,28 @@ const webLink = [
   <TimeEntry
     content={
       <a
+        href="https://github.com/ianarawjo/splat"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Affinity Diagramming in a Single File (by Prof. Arawjo)
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
+        href="https://statsforevals.com/index.html"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Statistics for Evals
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
         href="https://shellywhen.github.io/gardening/advice/paper-polish"
         target="_blank"
         rel="noreferrer noopener"

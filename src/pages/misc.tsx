@@ -31,7 +31,7 @@ const Misc: React.FC = () => (
     <Moments />
 
 
-    <Title level={4}>External Useful Information</Title>
+    <Title level={4}>External Useful Information/Projects</Title>
     <Divider style={{ margin: "0 0 1% 0" }} />
     <WebLinks></WebLinks>
   </Content>
