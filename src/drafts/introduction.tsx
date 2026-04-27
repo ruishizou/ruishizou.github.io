@@ -25,41 +25,40 @@ const PersonalIntrouction = () => {
             Human-centered AI · Health/Legal Informatics
           </Paragraph>
           <Paragraph>
-            Hello! I am Ruishi (Ray) Zou, a second-year master's
-            student from UC San Diego. I am also an incoming PhD student at Harvard University, where I will be advised by             <OuterLink
+            Hello! I am Ruishi (Ray) Zou, currently a second-year master's
+            student from UC San Diego. I am also an incoming PhD student at
+            Harvard University, where I will be advised by
+            <OuterLink
               link="https://glassmanlab.seas.harvard.edu/"
               text="Prof. Elena Glassman"
-            />. Previously, I earned my bachelor's degree
-            in Computer Science from Tongji University.
+            />{" "}
+            at the Variation Lab and will be part of Harvard's{" "}
+            <OuterLink
+              link="https://charm.seas.harvard.edu/"
+              text="Center for Human-driven AI Research and Methods (CHARM)"
+            />{" "}
+            community. Previously, I earned my bachelor's degree in Computer
+            Science from Tongji University.
           </Paragraph>
           <Paragraph>
             I <b>design and build intelligent systems</b> that empower humans to
             make sense of rich information, with the vision of applying them in
-            critical societal domains (e.g., health, legal). I research by making:
-            I use human-centered design methods to identify task-specific needs;
-            I leverage theories from human cognition and technical advances from
-            visualization and artificial intelligence to inform system design;
-            and I evaluate the systems through mixed-method user
-            studies.
-            {/* I am currently pursuing this vision by 
-            working closely with{" "}
-            <OuterLink
-              link="https://orsonxu.com/"
-              text="Prof. Xuhai (Orson) Xu"
-            />{" "}
-            at the 
-            <OuterLink link="https://sea-lab.space/" text="SEA Lab" />{" "}
-            from Columbia University. */}
+            critical societal domains (e.g., health, legal). I research by
+            making: I use human-centered design methods to identify
+            task-specific needs; I leverage theories from human cognition and
+            technical advances from visualization and artificial intelligence
+            (AI) to inform system design; and I evaluate the systems through
+            mixed-method user studies.
           </Paragraph>
           <Paragraph>
-            I am the author of several papers at top-tier academic venues,
-            including ACM CHI, IEEE TVCG, and ACL. My work has also been
-            acknowledged by the research community, receiving Honorable
-            Mention Awards at CHI 2025{" "}
+            I am the author of papers at top-tier academic venues, including ACM
+            CHI, IEEE TVCG, and ACL. My work has also been acknowledged by the
+            research community, receiving Honorable Mention Awards at CHI 2025{" "}
             <OuterLink
               link="https://programs.sigchi.org/chi/2025/program/content/188659"
               text="🏅"
-            />, and CHI 2026 
+            />
+            , and CHI 2026
             <OuterLink
               link="https://programs.sigchi.org/chi/2026/program/content/222396"
               text="🏅"
@@ -105,13 +104,13 @@ const PersonalIntrouction = () => {
       morePersonalStatement={
         <>
           <Paragraph>
-            I have broad experience in HCI and applied AI topics from research
-            and industry. I strive to build long-term, collaborative
-            relationships with my mentors, learning from their expertise while
-            contributing my own capability to shared goals:
+            My previous experience concentrated on HCI and applied AI topics
+            (mostly research, with some industry). I have strived to build
+            long-term, collaborative relationships with my mentors, learning
+            from their expertise while contributing my own capability to shared
+            goals:
             <ul>
               <li>
-                {" "}
                 I worked closely with{" "}
                 <OuterLink
                   link="https://tjdi.tongji.edu.cn/TeacherDetail.do?id=5056&lang=en"
@@ -121,41 +120,43 @@ const PersonalIntrouction = () => {
                 <OuterLink
                   link="https://idvxlab.com/"
                   text="Intelligent Big Data Visualization Lab (iDVx Lab)"
-                />{" "}/<OuterLink
-                  link="https://qlab.org.cn/"
-                  text="Q-Lab"
                 />{" "}
-                (2022-2023), during which I co-authored an IEEE TVCG paper and was offered to intern at the
+                /<OuterLink link="https://qlab.org.cn/" text="Q-Lab" />{" "}
+                (2022 - 2023), during which I co-authored an IEEE TVCG paper and
+                was offered an internship at the
                 <OuterLink
                   link="https://ava.antv.antgroup.com/en/"
                   text="AVA team"
                 />{" "}
-                from Ant Group.{" "}
+                from Ant Group.
               </li>
               <li>
-                {" "}
                 Supported by{" "}
                 <OuterLink
                   link="https://see.tongji.edu.cn/info/1398/11358.htm"
                   text="Prof. Chen Ye"
                 />
-                , I have successfully ran for 3 years (2023 - 2026, pausing at the moment) an HCI interest group at Tongji
-                University. Using my knowledge, I tutor and collaborate with
-                undergraduate students on interest-driven research projects on
-                HCI. Such efforts have resulted in a award-winning publication at
-                the ACM CHI conference, and three others at top-tier venues.
+                , I successfully ran an HCI interest group at Tongji
+                University for 3 years (2023 - 2026; currently paused, but
+                exploring ways to continue in another form). Using my knowledge,
+                I tutor and collaborate with undergraduate students on
+                interest-driven research projects on HCI. Such efforts have
+                resulted in an award-winning publication at CHI 2025, and four others at top-tier venues (three of which I
+                am part of the author team).
               </li>
               <li>
-                I have maintained a long-term collaboration with researchers from Northeastern University, working closely with  
+                I have maintained a long-term collaboration (2023 - now) with researchers
+                from Northeastern University, working with
                 <OuterLink
                   link="https://www.dakuowang.com/"
                   text="Prof. Dakuo Wang"
                 />
-                , and{" "}
+                ,{" "}
                 <OuterLink
                   link="https://www.bingshengyao.com/"
                   text="Dr. Bingsheng (Arthur) Yao"
-                />{" "}from the{" "}
+                />{" "}
+                from the{" "}
                 <OuterLink
                   link="https://hailab.io/"
                   text="Human-Centered Artificial Intelligence Lab"
@@ -164,28 +165,29 @@ const PersonalIntrouction = () => {
                 <OuterLink
                   link="http://www.lacepadilla.com/"
                   text="Prof. Lace Padilla"
-                />{" "}from the{" "}
+                />{" "}
+                from the{" "}
                 <OuterLink
                   link="https://vis.khoury.northeastern.edu/"
                   text="Khoury Vis Lab"
                 />
-                . In the collaboration, I worked on projects spanning from HCI & VIS to NLP, with papers
-                accepted or targeting top conferences such as ACL, NAACL, VIS,
-                and CHI.
+                . In the collaboration, I worked on projects spanning from HCI &
+                VIS to NLP, with papers accepted or targeting top conferences
+                such as ACL, NAACL, VIS, and CHI.
               </li>
               <li>
                 I have also been a visiting member of the{" "}
                 <OuterLink link="https://sea-lab.space/" text="SEA Lab" /> at
-                Columbia University advised by{" "}
+                Columbia University (2025 - now), advised by{" "}
                 <OuterLink
                   link="https://orsonxu.com/"
                   text="Prof. Xuhai (Orson) Xu"
-                />
-                , working on projects at the intersection of HCI, AI, and
-                health informatics, with an accepted paper at CHI 2026, which received a Best Paper Honorable Mention Award.{" "}
+                />. In this collaboration, I have worked on projects at the intersection of HCI, AI, and health
+                informatics, most notably with an award-winning paper at CHI 2026.{" "}
               </li>
               <li>
-                ... and hopefully many more collaborations to come in the future!
+                ... and hopefully many more collaborations to come in the
+                future!
               </li>
             </ul>
             <Paragraph>

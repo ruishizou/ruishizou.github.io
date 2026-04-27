@@ -6,6 +6,17 @@ const webLink = [
   <TimeEntry
     content={
       <a
+        href="https://dynomight.net/formatting/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> About Formatting in Writing
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
         href="https://github.com/ianarawjo/splat"
         target="_blank"
         rel="noreferrer noopener"

@@ -36,7 +36,7 @@ const App: React.FC = () => {
                 rel="noreferrer noopener"
               >
                 my page's design
-              </a>
+              </a> (an older version)
               , feel free to try it yourself!
             </Text>
           </Footer>
