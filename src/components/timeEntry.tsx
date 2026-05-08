@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Flex } from "antd";
-import "../constanats/constants";
 const { Text } = Typography;
 
 interface TimeEntrySpec {

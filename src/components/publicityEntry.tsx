@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Typography } from "antd";
 import OuterLink from "./Links/linkText";
-import "../constanats/constants";
 const { Text } = Typography;
 
 interface WebPublicitySpec {

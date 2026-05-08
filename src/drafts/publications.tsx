@@ -5,6 +5,24 @@ const { Text } = Typography;
 
 const publicationData: PubEntrySpec[] = [
   {
+    paperTitle: "Deco: Extending Personal Physical Objects into Pervasive AI Companion through a Dual-Embodiment Framework",
+    year: 2026,
+    authors: (
+      <>
+        Zhihan Jiang, Mengyuan "Millie" Wu, <b>Ruishi Zou</b>, Shiyu Xu, Xun Qian, Emma
+        Macmanus, Steven Liao, Ping Zhang, Bingsheng Yao, Tingyu Cheng, James L.
+        David, Nabila El-Bassel, Lena Mamykina, Frances R. Levin, Ryan Sultan,
+        Dakuo Wang, Xuhai "Orson" Xu
+      </>
+    ),
+    inSelectedCollection: false,
+    venueType: "arXiv",
+    venueShort: "arXiv",
+    venueFull: "In arXiv preprint",
+    preprintLink: "https://arxiv.org/abs/2605.03882",
+    teaser: "deco.webp",
+  },
+  {
     paperTitle:
       "Striking a Balance: Evaluating How Aggregations of Multiple Forecasts Impact Judgment Under Uncertainty",
     year: 2026,
@@ -70,8 +88,7 @@ const publicationData: PubEntrySpec[] = [
     teaser: "WSG_survey.webp",
   },
   {
-    paperTitle:
-      "Augmented Reading through Word-scale Graphics (WSGs)",
+    paperTitle: "Augmented Reading through Word-scale Graphics (WSGs)",
     year: 2026,
     authors: (
       <>
@@ -83,7 +100,8 @@ const publicationData: PubEntrySpec[] = [
     venueShort: "CHI'26",
     venueFull:
       "In CHI 2026 Workshop on Science and Technology for Augmenting Reading (STAR)",
-    paperLink: "https://chi-star-workshop.github.io/src/assets/pdf/papers/STAR-Workshop-Zou-WSGs-Position%20-%20Ruishi%20Zou.pdf",
+    paperLink:
+      "https://chi-star-workshop.github.io/src/assets/pdf/papers/STAR-Workshop-Zou-WSGs-Position%20-%20Ruishi%20Zou.pdf",
     teaser: "wsg-position.webp",
   },
   {
@@ -92,7 +110,9 @@ const publicationData: PubEntrySpec[] = [
     year: 2026,
     authors: (
       <>
-        Zhihan Jiang, Mengyuan Wu, <b>Ruishi Zou</b>, Shiyu Xu, Emma Macmanus, Steven Liao, Ping Zhang, Dakuo Wang, James L. David, Nabila El-Bassel, Lena Mamykina, Frances R. Levin, Ryan Sultan, Xuhai "Orson" Xu
+        Zhihan Jiang, Mengyuan "Millie" Wu, <b>Ruishi Zou</b>, Shiyu Xu, Emma Macmanus,
+        Steven Liao, Ping Zhang, Dakuo Wang, James L. David, Nabila El-Bassel,
+        Lena Mamykina, Frances R. Levin, Ryan Sultan, Xuhai "Orson" Xu
       </>
     ),
     inSelectedCollection: false,
@@ -100,7 +120,8 @@ const publicationData: PubEntrySpec[] = [
     venueShort: "CHI'26",
     venueFull:
       "In CHI 2026 Workshop on Everyday Wearable for Personalized Health and Well-Being",
-    paperLink: "https://everydaywearableforhealth.github.io/assets/pdf/CHI26W_Submission_Digital_Pet_for_CUD.pdf",
+    paperLink:
+      "https://everydaywearableforhealth.github.io/assets/pdf/CHI26W_Submission_Digital_Pet_for_CUD.pdf",
     teaser: "paws.webp",
   },
   {
@@ -129,7 +150,8 @@ const publicationData: PubEntrySpec[] = [
       "https://drive.google.com/file/d/1H8oKnJMCngU6uWe947Hhu_oe3P83i7n8/view?usp=sharing",
     slidesLink:
       "https://docs.google.com/presentation/d/1YeqHyuaW8jbh7IDz32FWhVsItT5GdTRp/edit?usp=sharing&ouid=112189970118768667986&rtpof=true&sd=true",
-    materialLink: "https://drive.google.com/drive/u/1/folders/1VcPWke5GMDScmv0KLc-4NyuKNQwZ36eS",
+    materialLink:
+      "https://drive.google.com/drive/u/1/folders/1VcPWke5GMDScmv0KLc-4NyuKNQwZ36eS",
     teaser: "gistvis.png",
     teaserInteractive: "gistvis.gif",
   },

@@ -5,6 +5,7 @@ import { LinkOutlined } from "@ant-design/icons";
 import { PubEntrySpec } from "@/types/spec";
 import PubEntry from "@/components/publicationEntry";
 import { useMenuState } from "@/store/menuState";
+import { colorProjection, colorProjectionBg } from "@/constanats/constants";
 const { Text, Title } = Typography;
 
 interface PublicationListProps {
@@ -32,9 +33,10 @@ const PublicationList: React.FC<PublicationListProps> = ({
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   // Derive displayedPub directly from filteredData and selectedTags
-  const displayedPub = selectedTags.length === 0
-    ? filteredData
-    : filteredData.filter((pub) => selectedTags.includes(pub.venueType));
+  const displayedPub =
+    selectedTags.length === 0
+      ? filteredData
+      : filteredData.filter((pub) => selectedTags.includes(pub.venueType));
 
   const handleChange = (tag: string, checked: boolean) => {
     const nextSelectedTags = checked
@@ -52,13 +54,25 @@ const PublicationList: React.FC<PublicationListProps> = ({
               key={tag}
               checked={selectedTags.includes(tag)}
               onChange={(checked) => handleChange(tag, checked)}
+              style={{
+                backgroundColor: selectedTags.includes(tag)
+                  ? colorProjection[tag as keyof typeof colorProjection]
+                  : colorProjectionBg[tag as keyof typeof colorProjectionBg],
+                // add gutter between tags
+                margin: "4px 8px 0 0",
+              }}
             >
               <Text
                 style={{
-                  color: selectedTags.includes(tag) ? "#fff" : "#000",
+                  // color: selectedTags.includes(tag) ? "#fff" : "#000",
+                  color: selectedTags.includes(tag)
+                    ? "#fff"
+                    : colorProjection[tag as keyof typeof colorProjection],
+                  // non-selectable as text
+                  userSelect: "none",
                 }}
               >
-                {tag}
+                <i>{tag}</i>
               </Text>
             </Tag.CheckableTag>
           ))}
@@ -103,14 +117,16 @@ const PublicationList: React.FC<PublicationListProps> = ({
               if (pub.year && pub.year !== lastYear) {
                 acc.push(
                   <div>
-                    {!isSelected && (<Divider
-                      titlePlacement="start"
-                      style={{ fontWeight: 600, margin: "0 0 1% 0" }}
-                    >
-                      {pub.year}
-                    </Divider>)}
+                    {!isSelected && (
+                      <Divider
+                        titlePlacement="start"
+                        style={{ fontWeight: 600, margin: "0 0 1% 0" }}
+                      >
+                        {pub.year}
+                      </Divider>
+                    )}
                     <PubEntry key={idx} {...pub} />
-                  </div>
+                  </div>,
                 );
                 lastYear = pub.year;
               } else {

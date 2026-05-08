@@ -16,8 +16,6 @@ import {
   Typography,
   Card,
 } from "antd";
-import colorProjection from "constants";
-import "../constanats/constants";
 import useScreenStore from "../store";
 import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
 import LinkTag from "@/components/Links/linkTag";
