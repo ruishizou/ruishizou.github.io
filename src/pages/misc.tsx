@@ -24,11 +24,11 @@ const Misc: React.FC = () => (
     <Divider style={{ margin: "0 0 1% 0" }} />
     <PrecenseOnWeb></PrecenseOnWeb> */}
 
-    <Title level={4} id="Conference Moments">
+    {/* <Title level={4} id="Conference Moments">
       Conference Moments
     </Title>
     <Divider style={{ margin: "0 0 1% 0" }} />
-    <Moments />
+    <Moments /> */}
 
 
     <Title level={4}>External Useful Information/Projects</Title>
