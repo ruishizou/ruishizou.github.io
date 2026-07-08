@@ -10,13 +10,13 @@ const PersonalIntrouction = () => {
     <PersonalInfo
       portrait={Selfie}
       name="Ruishi Zou"
-      affiliation="University of California, San Diego"
-      location="La Jolla, CA, USA"
+      affiliation="Harvard University"
+      location="Cambridge, MA, USA"
       googleScholar="https://scholar.google.com/citations?user=fHRnWkUAAAAJ"
       github="https://github.com/ruishizou"
       linkedin="https://www.linkedin.com/in/ruzou"
       email="mailto:ruishi.ray.zou@gmail.com"
-      // orcid="https://orcid.org/0009-0001-3798-6833"
+      orcid="https://orcid.org/0009-0001-3798-6833"
       twitter="https://twitter.com/ruishi_zou"
       personalStatement={
         <>
@@ -25,20 +25,19 @@ const PersonalIntrouction = () => {
             Human-centered AI · Health/Legal Informatics
           </Paragraph>
           <Paragraph>
-            Hello! I am Ruishi (Ray) Zou, currently a second-year master's
-            student from UC San Diego. I am also an incoming PhD student at
-            Harvard University, where I will be advised by
+            Hello! I am Ruishi, a first-year PhD student at
+            Harvard University, advised by
             <OuterLink
               link="https://glassmanlab.seas.harvard.edu/"
               text="Prof. Elena Glassman"
             />{" "}
-            at the Variation Lab and will be part of Harvard's{" "}
+            at the Variation Lab. I am also a part of Harvard's{" "}
             <OuterLink
               link="https://charm.seas.harvard.edu/"
               text="Center for Human-driven AI Research and Methods (CHARM)"
             />{" "}
             community. Previously, I earned my bachelor's degree in Computer
-            Science from Tongji University.
+            Science from Tongji University and my master's degree in Computer Science from UC San Diego (where you may know me as "Ray").
           </Paragraph>
           <Paragraph>
             I <b>design and build intelligent systems</b> that empower humans to
@@ -145,7 +144,7 @@ const PersonalIntrouction = () => {
                 am part of the author team).
               </li>
               <li>
-                I have maintained a long-term collaboration (2023 - now) with researchers
+                I have maintained a long-term collaboration (2023 - 2026) with researchers
                 from Northeastern University, working with
                 <OuterLink
                   link="https://www.dakuowang.com/"
@@ -178,7 +177,7 @@ const PersonalIntrouction = () => {
               <li>
                 I have also been a visiting member of the{" "}
                 <OuterLink link="https://sea-lab.space/" text="SEA Lab" /> at
-                Columbia University (2025 - now), advised by{" "}
+                Columbia University (2025 - 2026), advised by{" "}
                 <OuterLink
                   link="https://orsonxu.com/"
                   text="Prof. Xuhai (Orson) Xu"
@@ -186,12 +185,17 @@ const PersonalIntrouction = () => {
                 informatics, most notably with an award-winning paper at CHI 2026.{" "}
               </li>
               <li>
+                Besides those formal collaborations, I have also been situated in the broader{" "}
+                <OuterLink link="https://designlab.ucsd.edu/" text="Design Lab" /> community at the 
+                University of California, San Diego (2025 - 2026).{" "}
+              </li>
+              <li>
                 ... and hopefully many more collaborations to come in the
                 future!
               </li>
             </ul>
             <Paragraph>
-              Fun facts: 1) before deep diving into new knowledge, I love to
+              Fun facts: 1) before diving deep into new knowledge, I love to
               approach it with first-order intuitions, hence my passion for
               narrating insights with visualizations; 2) I usually prefer my
               interface to be direct manipulation, even in the age of chatbots;

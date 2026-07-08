@@ -38,7 +38,8 @@ const publicationData: PubEntrySpec[] = [
     venueFull:
       "In 2026 IEEE 19th Pacific Visualization Conference (PacificVis'26)",
     preprintLink: "https://arxiv.org/abs/2411.02576",
-    paperLink: "",
+    paperLink: "https://doi.org/10.1109/PacificVis68791.2026.00025",
+    slidesLink: "https://docs.google.com/presentation/d/16D0ibO61WfMWQ76JVbcbCzGvz49mrqCdnBsYEqhCXTI/edit?usp=sharing",
     materialLink: "https://osf.io/vc3kn/",
     teaser: "mfv.webp",
   },
@@ -64,6 +65,7 @@ const publicationData: PubEntrySpec[] = [
     videoLink: "https://youtu.be/t0QBgZ0V5uk",
     codeLink: "https://github.com/sea-lab-space/MIND",
     paperLink: "https://dl.acm.org/doi/10.1145/3772318.3790529",
+    slidesLink: "https://docs.google.com/presentation/d/1WQ1ZCuwkau5r2upDJlS-uw6TepgXym8V1sya-V-dCA0/edit?usp=sharing",
     awardName: "Best Paper Honorable Mention (top 5%)",
     teaser: "mind.webp",
     teaserInteractive: "mind.gif",
