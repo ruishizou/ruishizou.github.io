@@ -5,6 +5,23 @@ const { Text } = Typography;
 
 const publicationData: PubEntrySpec[] = [
   {
+    paperTitle: "Seeing Through the Forecast Clutter: Communicating Climate Forecast Distributions with Weighted Multiple Forecast Visualizations",
+    year: 2026,
+    authors: (
+      <>
+        <b>Ruishi Zou</b>, Siyi Wu, Racquel Fygenson, Dakuo Wang, Michael Correll,
+        Lace Padilla
+      </>
+    ),
+    inSelectedCollection: false,
+    venueType: "Conference",
+    venueShort: "VIS'26",
+    venueFull: "To appear in IEEE Transaction in Visualization and Computer Graphics (2027), special issue for VIS'26 full paper proceedings",
+    preprintLink: "https://arxiv.org/abs/2608.00433",
+    materialLink: "https://osf.io/fx67m/",
+    teaser: "mfv_perception.webp",
+  },
+  {
     paperTitle: "Deco: Extending Personal Physical Objects into Pervasive AI Companion through a Dual-Embodiment Framework",
     year: 2026,
     authors: (
