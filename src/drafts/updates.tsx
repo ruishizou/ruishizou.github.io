@@ -3,6 +3,12 @@ import TimedPubList from "../modules/timed_list";
 
 const updatesList = [
   <TimeEntry
+    startTime="Aug 24, 2026"
+    content={
+      <>Started a new journey at Harvard!</>
+    }
+  />,
+  <TimeEntry
     startTime="July 15, 2026"
     content={
       <>
