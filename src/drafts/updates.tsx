@@ -3,6 +3,15 @@ import TimedPubList from "../modules/timed_list";
 
 const updatesList = [
   <TimeEntry
+    startTime="July 15, 2026"
+    content={
+      <>
+        A followup paper on <b>Multiple Forecast Visualization</b> accepted to
+        VIS 2026!
+      </>
+    }
+  />,
+  <TimeEntry
     startTime="Jan 22, 2026"
     content={
       <>

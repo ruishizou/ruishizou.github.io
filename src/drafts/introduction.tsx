@@ -51,7 +51,7 @@ const PersonalIntrouction = () => {
           </Paragraph>
           <Paragraph>
             I am the author of papers at top-tier academic venues, including ACM
-            CHI, IEEE TVCG, and ACL. My work has also been acknowledged by the
+            CHI, IEEE VIS/TVCG, and ACL. My work has also been acknowledged by the
             research community, receiving Honorable Mention Awards at CHI 2025{" "}
             <OuterLink
               link="https://programs.sigchi.org/chi/2025/program/content/188659"
@@ -90,10 +90,10 @@ const PersonalIntrouction = () => {
             type="warning"
             title={
               <Text>
-                {/* 🧳{" "}
+                🧳{" "}
                 <b>
-                  I plan to attend CHI 2026 in person--looking forward to CHI-nect! <OuterLink link="https://programs.sigchi.org/chi/2026/search/content?searchKey=ruishi%20zou" text="Check out my papers in the CHI 2026 program!" />
-                </b> */}
+                  I will be attending VIS 2026 in person (and also as a student volunteer) in Boston--looking forward to (re)VIS-isting old and new friends! <OuterLink link="https://ieeevis.org/year/2026/info/program/papers_list/" text="Check out the VIS 2026 program!" />
+                </b>< br />
                 👋 Always happy to connect and chat!
               </Text>
             }
