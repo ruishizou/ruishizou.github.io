@@ -92,7 +92,7 @@ const PersonalIntrouction = () => {
               <Text>
                 🧳{" "}
                 <b>
-                  I will be attending VIS 2026 in person (and also as a student volunteer) in Boston--looking forward to (re)VIS-isting old and new friends! <OuterLink link="https://ieeevis.org/year/2026/info/program/papers_list/" text="Check out the VIS 2026 program!" />
+                  I will be attending VIS 2026 in person (and also as a student volunteer) in Boston--looking forward to (re)VIS-isting old and new friends! <OuterLink link="https://ieeevis.org/year/2026/program/papers/?search=ruishi+zou" text="Check out my paper in VIS 2026!" />
                 </b>< br />
                 👋 Always happy to connect and chat!
               </Text>
