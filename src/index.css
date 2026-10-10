@@ -19,7 +19,7 @@ code {
   --tweet-body-line-height: 1.25rem !important;
   --tweet-font-family: "Fira Sans" !important; 
 }
-/* Main page container: 90% / 60% widths, capped like Tailwind's
+/* Main page container: 90% / 70%→60% widths, capped like Tailwind's
    `max-w-7xl mx-auto` so ultra-wide screens don't stretch the content. */
 .page-layout {
   width: 90%;
@@ -30,5 +30,7 @@ code {
 
 /* Mobile breakpoint; keep in sync with MOBILE_BREAKPOINT in store.ts */
 @media (min-width: 960px) {
-  .page-layout { width: 60%; }
+  /* 70% on narrower desktops, easing to 60% on wider ones without a jump:
+     70% up to 1600px, holds 1120px, then 60% from ~1867px. */
+  .page-layout { width: max(60%, min(70%, 1120px)); }
 }

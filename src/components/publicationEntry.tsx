@@ -182,11 +182,11 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => {
       {teaserSrc && (
         <div
           style={{
-            // On wrap: 60% of the row, capped so it doesn't balloon on wider
+            // On wrap: 70% of the row, capped so it doesn't balloon on wider
             // screens (wrapping lasts up to 960px).
-            width: shouldWrap ? "60%" : "200px",
+            width: shouldWrap ? "70%" : "200px",
             minWidth: shouldWrap ? undefined : "200px",
-            maxWidth: shouldWrap ? "320px" : "200px",
+            maxWidth: shouldWrap ? "240px" : "200px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
