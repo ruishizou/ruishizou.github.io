@@ -2,24 +2,18 @@ import React, { useState, useEffect } from "react";
 import { ConfigProvider, Layout, Space, Typography } from "antd";
 import Routing from "./Routing";
 import HeaderMenu from "./modules/header";
-import useScreenStore from "./store";
 import ScreenWatcher from "./utils/screenWatcher";
 import { GLOBAL_STYLE } from "./style/globalStyle";
 const { Content, Header, Footer } = Layout;
 const { Paragraph, Text, Title } = Typography;
 
 const App: React.FC = () => {
-  const { shouldWrap } = useScreenStore();
-  const widthPercentage = shouldWrap ? "90%" : "70%";
-
   const LAST_UPDATED = __LAST_UPDATED__;
 
   return (
     <ConfigProvider theme={GLOBAL_STYLE}>
       <Space orientation="vertical" style={{ width: "100%" }}>
-        <Layout
-          style={{ width: widthPercentage, padding: "1%", margin: "0 auto" }}
-        >
+        <Layout className="page-layout">
           <ScreenWatcher />
           <Header>
             <HeaderMenu></HeaderMenu>

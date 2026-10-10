@@ -50,7 +50,7 @@ const PersonalIntrouction = () => {
             mixed-method user studies.
           </Paragraph>
           <Paragraph>
-            I am the author of papers at top-tier academic venues, including ACM
+            I am the author of papers at many top-tier academic venues, including ACM
             CHI, IEEE VIS/TVCG, and ACL. My work has also been acknowledged by the
             research community, receiving Honorable Mention Awards at CHI 2025{" "}
             <OuterLink

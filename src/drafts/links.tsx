@@ -17,6 +17,17 @@ const webLink = [
   <TimeEntry
     content={
       <a
+        href="https://dryoanaahmetoglu.github.io/daisy-disclosure/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> Disclosure of AI use template
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
         href="https://github.com/ianarawjo/splat"
         target="_blank"
         rel="noreferrer noopener"
