@@ -22,6 +22,21 @@ const publicationData: PubEntrySpec[] = [
     teaser: "mfv_perception.webp",
   },
   {
+    paperTitle: '"It Wouldn\'t Have Been So Apparent to Me": Evaluating How Thought-Level Progress Tracking Supports Psychosocial Goals',
+    year: 2026,
+    authors: (
+      <>
+        Shiyu Xu, <b>Ruishi Zou</b>, Anna R. Van Meter, Addie Weaver, Emily Mower Provost, Daniel Adler
+      </>
+    ),
+    inSelectedCollection: false,
+    venueType: "arXiv",
+    venueShort: "arXiv",
+    venueFull: "In arXiv preprint",
+    preprintLink: "https://arxiv.org/abs/2610.27238",
+    teaser: "thought-gps.webp",
+  },
+  {
     paperTitle: "Deco: Extending Personal Physical Objects into Pervasive AI Companion through a Dual-Embodiment Framework",
     year: 2026,
     authors: (
