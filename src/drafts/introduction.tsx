@@ -31,7 +31,11 @@ const PersonalIntrouction = () => {
               link="https://glassmanlab.seas.harvard.edu/"
               text="Prof. Elena Glassman"
             />{" "}
-            at the Variation Lab. I am also a part of Harvard's{" "}
+            at the 
+            <OuterLink
+              link="http://variationlab.seas.harvard.edu/"
+              text="Variation Lab"
+            />. I am also a part of Harvard's{" "}
             <OuterLink
               link="https://charm.seas.harvard.edu/"
               text="Center for Human-driven AI Research and Methods (CHARM)"
@@ -92,7 +96,7 @@ const PersonalIntrouction = () => {
               <Text>
                 🧳{" "}
                 <b>
-                  I will be attending VIS 2026 in person (and also as a student volunteer) in Boston--looking forward to (re)VIS-isting old and new friends! <OuterLink link="https://ieeevis.org/year/2026/program/papers/?search=ruishi+zou" text="Check out my paper in VIS 2026!" />
+                  I will be attending VIS 2026 in person (and also as a student volunteer) in Boston--looking forward to (re)VIS-isting old and new friends! <OuterLink link="https://ieeevis.org/year/2026/program/content/?search=ruishi+zou" text="Check out my paper in VIS 2026!" />
                 </b>< br />
                 👋 Always happy to connect and chat!
               </Text>

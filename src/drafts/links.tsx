@@ -145,6 +145,17 @@ const webLink = [
   <TimeEntry
     content={
       <a
+        href="https://www.psytoolkit.org/survey-library/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> PsyToolkit Survey Library
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
         href="https://www.asimovinstitute.org/neural-network-zoo/"
         target="_blank"
         rel="noreferrer noopener"
